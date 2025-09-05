@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICT College Program Pre-Assessment - Nagpayong High School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p id="login-error"></p>
+    </form>
+  </div>
+
+  <div id="assessment-container" style="display:none;">
+    <h2>ICT College Program Pre-Assessment</h2>
+    <form id="assessment-form">
+      <label>
+        1. Why are you interested in ICT?
+        <textarea name="interest" required></textarea>
+      </label>
+      <label>
+        2. What ICT skills do you already have?
+        <textarea name="skills" required></textarea>
+      </label>
+      <label>
+        3. What ICT course do you want to pursue in college?
+        <select name="course" required>
+          <option value="">Choose...</option>
+          <option value="BSIT">BS Information Technology</option>
+          <option value="BSCS">BS Computer Science</option>
+          <option value="BSIS">BS Information Systems</option>
+          <option value="BSCE">BS Computer Engineering</option>
+        </select>
+      </label>
+      <button type="submit">Submit Assessment</button>
+    </form>
+  </div>
+
+  <div id="result-container" style="display:none;">
+    <h2>Thank You!</h2>
+    <p>Your pre-assessment has been submitted.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
